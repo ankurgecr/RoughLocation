@@ -13,7 +13,7 @@ RoughLocations
  ~`<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />`~
 
  To get started with RoughLocations, you'll need to get
- add the dependency to your project's build.gradle file:
+ add the dependency to your project's (app level) build.gradle file:
 
  ```
  dependencies {
