@@ -8,7 +8,7 @@ publish {
     userOrg = 'ankurgecr'
     groupId = 'info.ankurpandya.roughlocation'
     artifactId = 'roughlocation'
-    publishVersion = '1.0.3'
+    publishVersion = '1.0.4'
     desc = 'A simple repository to fetch User\'s current location without permission requirement.'
     website = 'https://github.com/ankurgecr/RoughLocation'
 }
@@ -18,14 +18,14 @@ android {
 
     defaultConfig {
         minSdkVersion 15
-        versionCode 4
-        versionName "1.0.3"
+        versionCode 5
+        versionName "1.0.4"
         consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
