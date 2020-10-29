@@ -1,0 +1,3 @@
+include ':lib_roughlocation'
+include ':app'
+rootProject.name = "RoughLocation"

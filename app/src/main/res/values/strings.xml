@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RoughLocation</string>
+    <string name="action_get_location">Get Location</string>
+    <string name="msg_unexpected_error">Unexpected Error</string>
+    <string name="msg_connection_error">Connection Error</string>
+</resources>
