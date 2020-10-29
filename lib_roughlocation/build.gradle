@@ -7,10 +7,10 @@ android {
     buildToolsVersion "30.0.0"
 
     defaultConfig {
-        minSdkVersion "R"
+        minSdkVersion 15
         targetSdkVersion "R"
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.0.2"
         consumerProguardFiles "consumer-rules.pro"
     }
 

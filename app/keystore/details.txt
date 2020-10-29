@@ -1,0 +1,4 @@
+RoughLocation/app/keystore/signing_key
+Password@123
+Password@123
+app
