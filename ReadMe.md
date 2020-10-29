@@ -7,11 +7,10 @@ RoughLocations
  This library allows you to find the user's approx location based on network call.
  No Location specific permission check required. Simple and Easy!
 
- This library DO NOT need ~following~ permissions
- ```
- ~<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />~
- ~<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />~
- ```
+ This library DO NOT need following permissions
+
+ ~ `<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />` ~
+ ~`<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />`~
 
  To get started with RoughLocations, you'll need to get
  add the dependency to your project's build.gradle file:
