@@ -1,4 +1,4 @@
-package info.ankurpandya.lib_roughlocation;
+package info.ankurpandya.roughlocation;
 
 import android.os.Parcel;
 import android.os.Parcelable;

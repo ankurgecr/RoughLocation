@@ -1,16 +1,25 @@
 plugins {
     id 'com.android.library'
+    id 'com.github.panpf.bintray-publish' // package:2
+}
+
+// package:3
+publish {
+    userOrg = 'ankurgecr'
+    groupId = 'info.ankurpandya.roughlocation'
+    artifactId = 'roughlocation'
+    publishVersion = '1.0.3'
+    desc = 'A simple repository to fetch User\'s current location without permission requirement.'
+    website = 'https://github.com/ankurgecr/RoughLocation'
 }
 
 android {
-    compileSdkVersion "android-R"
-    buildToolsVersion "30.0.0"
+    compileSdkVersion 30
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion "R"
-        versionCode 3
-        versionName "1.0.2"
+        versionCode 4
+        versionName "1.0.3"
         consumerProguardFiles "consumer-rules.pro"
     }
 

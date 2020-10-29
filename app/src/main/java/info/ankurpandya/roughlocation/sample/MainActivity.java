@@ -1,14 +1,15 @@
-package info.ankurpandya.roughlocation;
+package info.ankurpandya.roughlocation.sample;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
-import info.ankurpandya.lib_roughlocation.LocationListener;
-import info.ankurpandya.lib_roughlocation.RoughLocation;
-import info.ankurpandya.lib_roughlocation.RoughLocationFetcher;
+import info.ankurpandya.roughlocation.LocationListener;
+import info.ankurpandya.roughlocation.RoughLocation;
+import info.ankurpandya.roughlocation.RoughLocationFetcher;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,21 +44,21 @@ public class MainActivity extends AppCompatActivity {
             public void onLocationReceived(RoughLocation roughLocation) {
                 progress.setVisibility(View.GONE);
                 txtResult.setText(roughLocation.toString());
-                txtResult.setTextColor(getColor(R.color.color_result));
+                txtResult.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.color_result));
             }
 
             @Override
             public void onLocationFailed() {
                 progress.setVisibility(View.GONE);
                 txtResult.setText(R.string.msg_unexpected_error);
-                txtResult.setTextColor(getColor(R.color.color_error));
+                txtResult.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.color_error));
             }
 
             @Override
             public void onNetworkError() {
                 progress.setVisibility(View.GONE);
                 txtResult.setText(R.string.msg_connection_error);
-                txtResult.setTextColor(getColor(R.color.color_error));
+                txtResult.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.color_error));
             }
         });
     }

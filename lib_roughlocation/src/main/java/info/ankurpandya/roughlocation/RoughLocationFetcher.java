@@ -1,4 +1,4 @@
-package info.ankurpandya.lib_roughlocation;
+package info.ankurpandya.roughlocation;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
