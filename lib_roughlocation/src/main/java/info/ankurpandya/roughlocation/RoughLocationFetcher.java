@@ -7,6 +7,8 @@ import android.net.NetworkInfo;
 import android.os.Build;
 import android.util.Log;
 
+import androidx.annotation.Nullable;
+
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -54,7 +56,7 @@ public final class RoughLocationFetcher {
         //No default construction
     }
 
-    public static void getLocationInBackground(Context context, final LocationListener listener) {
+    public static void getLocationInBackground(Context context, @Nullable final LocationListener listener) {
         if (context == null) {
             if (DEBUG) {
                 Log.e(TAG, "Location failed due to NULL Context passed!");
