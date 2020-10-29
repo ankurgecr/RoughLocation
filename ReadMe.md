@@ -10,7 +10,6 @@ RoughLocations
  This library DO NOT need following permissions
 
  ~`<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />`~
-
  ~`<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />`~
 
  To get started with RoughLocations, you'll need to get
