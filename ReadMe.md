@@ -13,7 +13,7 @@ RoughLocations
  ~`<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />`~
 
  To get started with RoughLocations, you'll need to get
- add the dependency to your project's (app level) build.gradle file:
+ add the dependency to your project's (app level) `build.gradle` file:
 
  ```
  dependencies {
@@ -21,13 +21,22 @@ RoughLocations
      implementation 'info.ankurpandya.roughlocation:roughlocation:1.0.4'
  }
  ```
- and sync up your project.
+ and sync up your project. If you get error `Could not resolve all files` while gralde Sync, then make sure you have added `jcenter()` repositories in your Projet level `build.gradle` file:
+
+ ```
+ allprojects {
+     repositories {
+         //other repositories
+         jcenter()
+     }
+ }
+ ```
 
  Good. Now you are all set to use RoughLocations.
 
- Retriving Rough Location
+ Retrieving Rough Location
  --------
- In order to retrive the location, call this method:
+ In order to retrieve the location, call this method:
 
  ```
 RoughLocationFetcher.getLocationInBackground(context, new LocationListener() {
